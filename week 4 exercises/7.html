@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <heading id="heading">
+       <h1> Create New Account</h1>
+    </heading>
+
+    <form action="http://requestbin.whapi.cloud/1ixsqy51" method="POST">
+        <Label for="name">Name</Label></br>
+        <input type="text" name="name" placeholder="John Doe" required><br>
+        <label for="birthday">Birthday</label></br>
+        <input type="date" name="birthday" required><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" placeholder="example@gmail.com" required><br>
+        <lable for="phone">Phone Number</lable><br>
+        <input type="tel" name="phone" placeholder="0225685756"><br>
+        <label fo="adress">Address</label><br>
+        <input type="textarea" name="adress" placeholder="Type here"><br>
+        <label>Gender:</label></br>
+        <input type="radio" name="gender" value="mr">
+        <label for="mr">Mr</label>
+        <input type="radio" name="gender" value="ms">
+        <label for="ms">Ms</label>
+        <input type="radio" name="gender" value="non-binary">
+        <label for="non-binary">Non-binary</label><br><br>
+        <lable for="upload">Upload profile picture</lable>
+        <input type="file" name="upload" name="upload" accept=".jpg, .jpeg, .png"><br><br>
+        
+        <label for="preffered contact">Preferred Contact Method</label>
+        <select id="preffered contact" name="preffered contact" required>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="post">Post</option>
+        </select><br><br>
+        <label for="subscribe">Subscribe to newsletter</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+        <button type="submit">Create</button>
+        <button type="reset">Reset</button><br>
+        <input type="hidden" name="sender" value="joel wood">
+    </form>
+</body>
+
+</html>
