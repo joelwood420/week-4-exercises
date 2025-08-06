@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "bigshoulders";
+  src: url("assets/LexendDeca-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("assets/BigShoulders-VariableFont_opsz\,wght\ \(1\).ttf")
+    format("truetype");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e0e0e0;
+  margin: 0;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.container {
+  background-color: #f0f0f0;
+  display: flex;
+  padding: 190px;
+  height: 530px;
+  width: 900px;
+}
+
+.card1 {
+  background-color: hwb(31 15% 11%);
+  border-radius: 10px 0 0px 10px;
+}
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 10px 10px 0px;
+}
+.button {
+  font-family: "bigshoulders";
+  font-weight: 400;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+p {
+  font-family: "bigshoulders";
+  font-weight: 400;
+  font-size: 17px;
+  margin: 20px 0;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+}
+.card1,
+.card2,
+.card3 {
+  padding: 55px;
+}
+h3 {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.button {
+  padding: 15px 40px;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  border: #e0e0e0 2px solid;
+  border-radius: 40px;
+}
+
+.button:active {
+  background-color: hsla(0, 33%, 96%, 0);
+  color: hsl(0, 0%, 100%);
+}
+
+.card1 > button {
+  color: hwb(31 15% 11%);
+}
+
+.card2 > button {
+  color: hsl(184, 100%, 22%);
+}
+.card3 > button {
+  color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        width: 350px;
+        height : 100%;
+        .card1 {
+            border-radius: 10px 10px 0px 0px;
+            
+        }
+        .card3 {
+            border-radius: 0px 0px 10px 10px;
+        }
+        
+            padding: 80px;
+        }
+        
+    }
+
+
+
+
+
